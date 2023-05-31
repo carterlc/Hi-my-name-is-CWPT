@@ -1,7 +1,11 @@
 <?php 
 
-;?>
-    <section id="contact" class="contact accent">
+?>
+
+
+<section style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/noise.png), 
+        url(<?php echo get_template_directory_uri(); ?>/assets/images/blurry-white-black.svg);"
+        id="contact" class="contact accent">
         <div class="section__container">
             <div class="contact__container">
                 <h2>Get in touch</h2>
@@ -43,3 +47,9 @@
             </div>
         </div>
     </section>
+
+  <?php
+    wp_footer();
+  ?>
+
+</body>

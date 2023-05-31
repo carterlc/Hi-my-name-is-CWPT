@@ -258,7 +258,7 @@ section img {
 section.light {
     background-color: var(--clr-light);
     color: var(--clr-dark);
-    background-image: url('/assets/noise.png'), url('/assets/blurry-red-black.svg');
+    background-image: url('/assets/images/noise.png'), url('/assets/images/blurry-red-black.svg');
     background-repeat: repeat, no-repeat;
     background-position: left top, left bottom;
     background-size: auto, cover;
@@ -267,7 +267,7 @@ section.light {
 section.dark {
     background-color: var(--clr-dark);
     color: var(--clr-light);
-    background-image: url('/assets/noise.png'), url('/assets/blurry-white-red.svg');
+    background-image: url('/assets/images/noise.png'), url('/assets/images/blurry-white-red.svg');
     background-repeat: repeat, no-repeat;
     background-position: left top, left bottom;
     background-size: auto, cover;
@@ -380,7 +380,7 @@ section#about .about__container .heading__container p.about-me-txt {
 /* Tools */
 
 section.tools{
-    background-image: url('/assets/noise.png'), url('/assets/blurry-white.svg');
+    background-image: url('/assets/images/noise.png'), url('/assets/images/blurry-white.svg');
     background-repeat: repeat, no-repeat;
     background-position: left top, left bottom;
     background-size: auto, cover;
@@ -593,7 +593,7 @@ section.contact {
     /* position: sticky;
     z-index: -1;
     bottom: 0px; */
-    background-image: url('/assets/noise.png'), url('/assets/blurry-white-black.svg');
+    background-image: url('/assets/images/noise.png'), url('/assets/images/blurry-white-black.svg');
     background-repeat: repeat, no-repeat;
     background-position: left top, left bottom;
     background-size: auto, cover;

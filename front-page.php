@@ -4,64 +4,14 @@
  */
 ?>
 
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>carterlc</title>
-
-    <!-- My stylesheet -->
-    <!-- <link rel="stylesheet" href="css/styling.css"> -->
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-    
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Poppins&display=swap"
-        rel="stylesheet">
-
-    <!-- <link rel="stylesheet" href="/wp-content/themes/himynameis/style.css"> -->
-
-</head>
 <?php
-wp_head();
+    get_header();
 ?>
-<body>
 
-    <header>
-        <div class="logo">
-            <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
-                <path class="svg__path" d="M522.5,293.4c-17.8,0-35,2.3-51.4,6.5l0,141.8c13.7-12.3,31.7-19.7,51.4-19.7c29,0,54.2,16,67.4,39.6l112-63.1C666.7,335.7,599.5,293.4,522.5,293.4z"/>
-                <path class="svg__path" d="M724.7,613.6C685,684.2,609.5,731.8,522.9,731.8c-127.8,0-231.4-103.6-231.4-231.4c0-127.8,103.6-231.4,231.4-231.4c86.7,0,162.2,47.6,201.8,118.1l4.2-2.4l107.8-60.7C775,214.3,657.6,140.3,522.9,140.3c-198.9,0-360,161.2-360,360c0,198.8,161.1,360,360,360c134.7,0,252.1-74,313.8-183.5L728.9,616L724.7,613.6z"/>
-                <path class="svg__path" d="M589.9,536.1c-13.2,23.6-38.4,39.6-67.4,39.6c-42.6,0-77.1-34.5-77.1-77.1l0-190.7c-75.4,30.5-128.6,104.4-128.6,190.7c0,113.6,92.1,205.7,205.7,205.7c77,0,144.2-42.3,179.4-105L589.9,536.1z"/>
-            </svg>
-        </div>
-        <button class="hamburger-nav" aria-label="toggle navigation">
-            <svg class="hamburger" viewbox="0 0 100 100" width="50">
-                <rect class="line top" width="60" height="8" x="10" y="20"></rect>
-                <rect class="line middle" width="60" height="8" x="10" y="50"></rect>
-                <rect class="line bottom" width="60" height="8" x="10" y="80"></rect>
-            </svg>
-        </button>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#home" class="nav__link dash accent">Home</a></li>
-                <li class="nav__item"><a href="#about" class="nav__link dash accent">About</a></li>
-                <li class="nav__item"><a href="#projects" class="nav__link dash accent">Projects</a></li>
-                <li class="nav__item"><a href="#contact" class="nav__link dash accent">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
     <!-- Introduction -->
-    <section id="home" class="intro dark">
+    <section style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/noise.png), 
+        url(<?php echo get_template_directory_uri(); ?>/assets/images/blurry-white-red.svg);"
+        id="home" class="intro dark">
         <div class="section__container">
             <div class="heading__container">
                 <h1>Hi, my name is Carter.</h1>
@@ -96,7 +46,9 @@ wp_head();
             </div>
         </div>
     </section>
-    <section id="about" class="about light">
+    <section style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/noise.png), 
+        url(<?php echo get_template_directory_uri(); ?>/assets/images/blurry-red-black.svg);"
+        id="about" class="about light">
         <div class="section__container">
             <div class="about__container">
                 <div class="heading__container">
@@ -128,7 +80,9 @@ wp_head();
             </div>
         </div>
     </section>
-    <section id="tools" class="tools dark">
+    <section style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/noise.png), 
+        url(<?php echo get_template_directory_uri(); ?>/assets/images/blurry-white.svg);"
+        id="tools" class="tools dark">
         <div class="tools__heading">
             <h2>My toolbox</h2>
             <p class="sub-heading">Here is what I have learned since becoming a web developer</p>
@@ -143,7 +97,9 @@ wp_head();
             </div>
         </div>
     </section>
-    <section class="services light">
+    <section style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/noise.png), 
+        url(<?php echo get_template_directory_uri(); ?>/assets/images/blurry-red-black.svg);"
+        class="services light">
         <div class="section__container">
             <div class="heading__container">
                 <h2>What I Provide</h2>
@@ -174,7 +130,9 @@ wp_head();
             </div>
         </div>
     </section>
-    <section id="projects" class="projects dark">
+    <section style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/noise.png), 
+        url(<?php echo get_template_directory_uri(); ?>/assets/images/blurry-white-red.svg);"
+        id="projects" class="projects dark">
         <div class="section__container">
             <div class="projects__container">
                 <div class="heading__container grid-item-1">
@@ -210,7 +168,9 @@ wp_head();
             </div>
         </div>
     </section>
-    <section class="projects light">
+    <section style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/noise.png), 
+        url(<?php echo get_template_directory_uri(); ?>/assets/images/blurry-red-black.svg);"
+        class="projects light">
         <div class="section__container">
             <div class="projects__container">
                 <div class="heading__container grid-item-1">
@@ -245,7 +205,9 @@ wp_head();
             </div>
         </div>
     </section>
-    <section id="other" class="other dark">
+    <section style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/noise.png), 
+        url(<?php echo get_template_directory_uri(); ?>/assets/images/blurry-white-red.svg);"
+        id="other" class="other dark">
         <div class="section__container">
             <div class="heading__container">
                 <h2>Other projects</h2>
@@ -319,51 +281,7 @@ wp_head();
             </div>
         </div>
     </section>
-    <section id="contact" class="contact accent">
-        <div class="section__container">
-            <div class="contact__container">
-                <h2>Get in touch</h2>
-                <p>Im tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent
-                    taciti
-                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus
-                    enim egestas,
-                </p>
-                <button class="contact_btn" role="button"><span class="text">Shoot me an email!</span><span>Thank
-                        you!</span></button>
-                <div class="socials">
-                    <ul class="social-list">
-                        <li class="social-list__item">
-                            <a class="social-list__link" href="https://codepen.io">
-                                <i class="fab fa-codepen"></i>
-                            </a>
-                        </li>
-                        <li class="social-list__item">
-                            <a class="social-list__link" href="http://dribbble.com">
-                                <i class="fab fa-dribbble"></i>
-                            </a>
-                        </li>
-                        <li class="social-list__item">
-                            <a class="social-list__link" href="https://twitter.com">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="social-list__item">
-                            <a class="social-list__link" href="https://github.com">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <button id="backToTop"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24">
-                        <path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
-                    </svg></button>
-            </div>
-        </div>
-    </section>
-
-    <script src="js/index.js"></script>
-
-</body>
-
+    <?php
+        get_footer();
+    ?>
 </html>

@@ -1,15 +1,21 @@
 <?php 
 
-;?>
-  <header>
-        <?php
-            $params = array(
-                'container' => false,
-                'theme_location' => 'social-menu',
-                'menu_class' => 'nav'
-            );
-            wp_nav_menu( $params );
-        ?>
+?>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<?php
+    wp_head();
+?>
+<body>
+
+    <header>
         <div class="logo">
             <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
                 <path class="svg__path" d="M522.5,293.4c-17.8,0-35,2.3-51.4,6.5l0,141.8c13.7-12.3,31.7-19.7,51.4-19.7c29,0,54.2,16,67.4,39.6l112-63.1C666.7,335.7,599.5,293.4,522.5,293.4z"/>
