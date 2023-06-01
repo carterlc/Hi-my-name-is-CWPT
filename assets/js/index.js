@@ -1,17 +1,31 @@
+//Add .dash to the menu toggle because wordpress wont let me use my classes for <a> tags
+window.addEventListener('load', function() {
+    var navItems = document.querySelectorAll('.nav__item');
+  
+    navItems.forEach(function(item) {
+      var children = item.children;
+      for (var i = 0; i < children.length; i++) {
+        children[i].classList.add('dash', 'accent');
+      }
+    });
+  });
+
 // Toggle the fullscreen nav open/close
 const navToggle = document.querySelector('.hamburger-nav');
-const navLinks = document.querySelectorAll('.nav__link')
+const navItems = document.querySelectorAll('.nav__item');
 
 navToggle.addEventListener('click', () => {
-    document.body.classList.toggle('nav-open');
-    console.log('hello')
+  document.body.classList.toggle('nav-open');
+  console.log('hello');
 });
 
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        document.body.classList.remove('nav-open');
-    })
-})
+navItems.forEach(item => {
+  const navLink = item.querySelector('a');
+  
+  navLink.addEventListener('click', () => {
+    document.body.classList.remove('nav-open');
+  });
+});
 
 // Back to the top button
 

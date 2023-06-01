@@ -31,11 +31,21 @@
             </svg>
         </button>
         <nav class="nav">
-            <ul class="nav__list">
+                        <?php
+                            wp_nav_menu(
+                                array(
+                                    'menu' => 'primary',
+                                    'container' => '',
+                                    'theme_location' => 'primary',
+                                    'items_wrap' => '<ul id="" class="nav__list">%3$s</ul>'
+                                )
+                            );
+                        ?>
+            <!-- <ul class="nav__list">
                 <li class="nav__item"><a href="#home" class="nav__link dash accent">Home</a></li>
                 <li class="nav__item"><a href="#about" class="nav__link dash accent">About</a></li>
                 <li class="nav__item"><a href="#projects" class="nav__link dash accent">Projects</a></li>
                 <li class="nav__item"><a href="#contact" class="nav__link dash accent">Contact</a></li>
-            </ul>
+            </ul> -->
         </nav>
     </header>

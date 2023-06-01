@@ -203,14 +203,14 @@ nav {
     text-align: right;
 }
 
-.nav__link {
+.nav__item > a {
     text-decoration: none;
     color: inherit;
     font-size: var(--fs-h1);
     font-weight: var(--fw-black);
 }
 
-.nav__link:hover {
+.nav__item > a:hover {
     color: var(--clr-accent);
 }
 
@@ -358,6 +358,10 @@ section.intro {
 .socials a {
     color: var(--clr-light);
 }
+
+/* a {
+    color: var(--clr-light);
+} */
 
 .socials a:hover {
     color: var(--clr-accent);

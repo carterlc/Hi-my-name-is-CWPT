@@ -19,28 +19,20 @@
                     <p class="sub-heading dash light">A<span class="accent-text"> front-end </span>web
                         developer/designer</p>
                     <div class="socials">
-                        <ul class="social-list">
-                            <li class="social-list__item">
-                                <a class="social-list__link" href="https://codepen.io">
-                                    <i class="fab fa-codepen"></i>
-                                </a>
-                            </li>
-                            <li class="social-list__item">
-                                <a class="social-list__link" href="http://dribbble.com">
-                                    <i class="fab fa-dribbble"></i>
-                                </a>
-                            </li>
-                            <li class="social-list__item">
-                                <a class="social-list__link" href="https://twitter.com">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li class="social-list__item">
-                                <a class="social-list__link" href="https://github.com">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </li>
-                        </ul>
+
+
+                    <?php
+
+                        wp_nav_menu(
+                            array(
+                                'menu' => 'hero',
+                                'container' => '',
+                                'theme_location' => 'Hero social icons',
+                                'items_wrap' => '<ul id="" class="social-list">%3$s</ul>'
+                            )
+                        );
+
+                    ?>
                     </div>
                 </div>
             </div>

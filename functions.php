@@ -3,7 +3,7 @@
 function custom_theme_support() {
     // Add dynamic title
     add_theme_support( 'title-tag' );
-    
+
 }
 
 add_action( 'after_setup_theme', 'custom_theme_support' );
@@ -26,14 +26,16 @@ add_action( 'wp_enqueue_scripts', 'custom_theme_scripts' );
 
 
 // Menu Support (basic)
+function custom_theme_menus() {
 
-function register_theme_menus() {
-    register_nav_menus(
-        array(
-            'primary-menu' => __( 'Primary Menu' ),
-            'social-menu' => __( 'Social Menu' )
-        )
+    $locations = array(
+        "primary" => "Main Navigation",
+        "hero" => "Hero Social Icons",
+        "footer" => "Footer Social Icons"
     );
+    register_nav_menus($locations);
 }
-add_action( 'init', 'register_theme_menus' );
+
+add_action('init', 'custom_theme_menus');
+
 
