@@ -17,28 +17,20 @@
                 <button class="contact_btn" role="button"><span class="text">Shoot me an email!</span><span>Thank
                         you!</span></button>
                 <div class="socials">
-                    <ul class="social-list">
-                        <li class="social-list__item">
-                            <a class="social-list__link" href="https://codepen.io">
-                                <i class="fab fa-codepen"></i>
-                            </a>
-                        </li>
-                        <li class="social-list__item">
-                            <a class="social-list__link" href="http://dribbble.com">
-                                <i class="fab fa-dribbble"></i>
-                            </a>
-                        </li>
-                        <li class="social-list__item">
-                            <a class="social-list__link" href="https://twitter.com">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="social-list__item">
-                            <a class="social-list__link" href="https://github.com">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                    </ul>
+
+                <?php
+
+                    wp_nav_menu(
+                        array(
+                            'menu' => 'footer',
+                            'container' => '',
+                            'theme_location' => 'footer',
+                            'items_wrap' => '<ul id="" class="social-list">%3$s</ul>'
+                        )
+                    );
+
+                ?>
+
                 </div>
                 <button id="backToTop"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24">
