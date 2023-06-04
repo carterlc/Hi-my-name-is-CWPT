@@ -95,6 +95,7 @@ p {
 img {
     max-width: 100%;
     display: block;
+    width:100%;
 }
 
 p.sub-heading {
@@ -562,7 +563,7 @@ section.tools{
 
 .other__projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--squishy-padding-sml);
 }
 
