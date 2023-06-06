@@ -87,7 +87,118 @@
                             </a>
                     <?php } ?>
                 </div>
-
+                <div class="project__item">
+                    <?php
+                        // Get the ACF field values
+                        $other_projects = get_field('other_project_6');
+                        if ($other_projects && !empty($other_projects['other_project_image_6']) && !empty($other_projects['other_project_image_6_url'])) {
+                            $other_project_image_6 = $other_projects['other_project_image_6'];
+                            $other_project_image_6_url = $other_projects['other_project_image_6_url'];
+                        ?>
+                            <a href="<?php echo $other_project_image_6_url; ?>">
+                                <img src="<?php echo $other_project_image_6['url']; ?>" alt="<?php echo $other_project_image_6['alt']; ?>">
+                                <div class="project__item-overlay">
+                                    <div class="overlay-text">Click Me!</div>
+                                </div>
+                            </a>
+                    <?php } ?>
+                </div>
+                <div class="project__item">
+                    <?php
+                        // Get the ACF field values
+                        $other_projects = get_field('other_project_7');
+                        if ($other_projects && !empty($other_projects['other_project_image_7']) && !empty($other_projects['other_project_image_7_url'])) {
+                            $other_project_image_7 = $other_projects['other_project_image_7'];
+                            $other_project_image_7_url = $other_projects['other_project_image_7_url'];
+                        ?>
+                            <a href="<?php echo $other_project_image_7_url; ?>">
+                                <img src="<?php echo $other_project_image_7['url']; ?>" alt="<?php echo $other_project_image_7['alt']; ?>">
+                                <div class="project__item-overlay">
+                                    <div class="overlay-text">Click Me!</div>
+                                </div>
+                            </a>
+                    <?php } ?>
+                </div>
+                <div class="project__item">
+                    <?php
+                        // Get the ACF field values
+                        $other_projects = get_field('other_project_8');
+                        if ($other_projects && !empty($other_projects['other_project_image_8']) && !empty($other_projects['other_project_image_8_url'])) {
+                            $other_project_image_8 = $other_projects['other_project_image_8'];
+                            $other_project_image_8_url = $other_projects['other_project_image_8_url'];
+                        ?>
+                            <a href="<?php echo $other_project_image_8_url; ?>">
+                                <img src="<?php echo $other_project_image_8['url']; ?>" alt="<?php echo $other_project_image_8['alt']; ?>">
+                                <div class="project__item-overlay">
+                                    <div class="overlay-text">Click Me!</div>
+                                </div>
+                            </a>
+                    <?php } ?>
+                </div>
+                <div class="project__item">
+                    <?php
+                        // Get the ACF field values
+                        $other_projects = get_field('other_project_9');
+                        if ($other_projects && !empty($other_projects['other_project_image_9']) && !empty($other_projects['other_project_image_9_url'])) {
+                            $other_project_image_9 = $other_projects['other_project_image_9'];
+                            $other_project_image_9_url = $other_projects['other_project_image_9_url'];
+                        ?>
+                            <a href="<?php echo $other_project_image_9_url; ?>">
+                                <img src="<?php echo $other_project_image_9['url']; ?>" alt="<?php echo $other_project_image_9['alt']; ?>">
+                                <div class="project__item-overlay">
+                                    <div class="overlay-text">Click Me!</div>
+                                </div>
+                            </a>
+                    <?php } ?>
+                </div>
+                <div class="project__item">
+                    <?php
+                        // Get the ACF field values
+                        $other_projects = get_field('other_project_10');
+                        if ($other_projects && !empty($other_projects['other_project_image_10']) && !empty($other_projects['other_project_image_10_url'])) {
+                            $other_project_image_10 = $other_projects['other_project_image_10'];
+                            $other_project_image_10_url = $other_projects['other_project_image_10_url'];
+                        ?>
+                            <a href="<?php echo $other_project_image_10_url; ?>">
+                                <img src="<?php echo $other_project_image_10['url']; ?>" alt="<?php echo $other_project_image_10['alt']; ?>">
+                                <div class="project__item-overlay">
+                                    <div class="overlay-text">Click Me!</div>
+                                </div>
+                            </a>
+                    <?php } ?>
+                </div>
+                <div class="project__item">
+                    <?php
+                        // Get the ACF field values
+                        $other_projects = get_field('other_project_11');
+                        if ($other_projects && !empty($other_projects['other_project_image_11']) && !empty($other_projects['other_project_image_11_url'])) {
+                            $other_project_image_11 = $other_projects['other_project_image_11'];
+                            $other_project_image_11_url = $other_projects['other_project_image_11_url'];
+                        ?>
+                            <a href="<?php echo $other_project_image_11_url; ?>">
+                                <img src="<?php echo $other_project_image_11['url']; ?>" alt="<?php echo $other_project_image_11['alt']; ?>">
+                                <div class="project__item-overlay">
+                                    <div class="overlay-text">Click Me!</div>
+                                </div>
+                            </a>
+                    <?php } ?>
+                </div>
+                <div class="project__item">
+                    <?php
+                        // Get the ACF field values
+                        $other_projects = get_field('other_project_12');
+                        if ($other_projects && !empty($other_projects['other_project_image_12']) && !empty($other_projects['other_project_image_12_url'])) {
+                            $other_project_image_12 = $other_projects['other_project_image_12'];
+                            $other_project_image_12_url = $other_projects['other_project_image_12_url'];
+                        ?>
+                            <a href="<?php echo $other_project_image_12_url; ?>">
+                                <img src="<?php echo $other_project_image_12['url']; ?>" alt="<?php echo $other_project_image_12['alt']; ?>">
+                                <div class="project__item-overlay">
+                                    <div class="overlay-text">Click Me!</div>
+                                </div>
+                            </a>
+                    <?php } ?>
+                </div>
                 <!-- <div class="project__item">
                 <a href="">
                         <img src="assets/images/P2INNACLE_LOGO-50.jpg" alt="ProjectImage">

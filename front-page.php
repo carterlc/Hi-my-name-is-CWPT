@@ -2,13 +2,6 @@
 /*
  * Template Name: Landing Template
  */
-
-//  $aboutImage = get_field( 'about_me_image' );
-//  $projectImage = get_field( 'project_image' );
-
-//  $picture = $aboutImage[ 'sizes' ][ 'large' ];
-//  $picture = $projectImage[ 'sizes' ][ 'large' ];
-
 ?>
 
 <?php
@@ -28,10 +21,7 @@
                     <p class="sub-heading dash light">A <span class="accent-text"> front-end </span>web
                         developer/designer</p>
                     <div class="socials">
-
-
                     <?php
-
                         wp_nav_menu(
                             array(
                                 'menu' => 'hero',
@@ -40,7 +30,6 @@
                                 'items_wrap' => '<ul id="" class="social-list">%3$s</ul>'
                             )
                         );
-
                     ?>
                     </div>
                 </div>
@@ -68,14 +57,11 @@
             <h2>My toolbox</h2>
             <p class="sub-heading">Here is what I have learned since becoming a web developer</p>
         </div>
+
         <div class="slider">
-            <div class="slider__container">
-                <img src="assets/DailyDose.png" alt="">
-                <img src="assets/DailyDose.png" alt="">
-                <img src="assets/DailyDose.png" alt="">
-                <img src="assets/DailyDose.png" alt="">
-                <img src="assets/DailyDose.png" alt="">
-            </div>
+            <?php
+                echo do_shortcode( '[logocarousel id="215"]' );
+            ?>
         </div>
     </section>
     <section style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/noise.png), 
