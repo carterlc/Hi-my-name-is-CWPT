@@ -3,8 +3,8 @@
         id="other" class="other dark">
         <div class="section__container">
             <div class="heading__container">
-                <h2>Other projects</h2>
-                <p class="sub-heading dash light">almost there...</p>
+                <h2 data-aos="fade-in" data-aos-duration="1000">Other projects</h2>
+                <p class="sub-heading dash light" data-aos="fade-right" data-aos-delay="250" data-aos-duration="750">almost there...</p>
             </div>
             <div class="other__projects">
                 <div class="project__item">

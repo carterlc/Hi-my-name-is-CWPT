@@ -14,20 +14,28 @@
         id="home" class="intro dark">
         <div class="section__container">
             <div class="heading__container">
-                <h1>
+                <h1 data-aos="fade-in" data-aos-duration="2000">
                     <?php echo get_bloginfo('name'); ?>
                 </h1>
                 <div class="heading__container-bottom">
-                    <p class="sub-heading dash light">A <span class="accent-text"> front-end </span>web
+                    <p class="sub-heading dash light" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="750">A <span class="accent-text"> front-end </span>web
                         developer/designer</p>
                     <div class="socials">
-                    <?php
+                    <?php 
                         wp_nav_menu(
                             array(
                                 'menu' => 'hero',
                                 'container' => '',
                                 'theme_location' => 'hero',
-                                'items_wrap' => '<ul id="" class="social-list">%3$s</ul>'
+                                'items_wrap' => '<ul 
+
+                                id="" 
+                                class="social-list" 
+                                data-aos="fade-down"
+                                data-aos-duration="750"
+                                data-aos-delay="1500"
+                                
+                                >%3$s</ul>'
                             )
                         );
                     ?>
@@ -42,8 +50,8 @@
         <div class="section__container">
             <div class="about__container">
                 <div class="heading__container">
-                    <h2>About me</h2>
-                    <p class="sub-heading dash dark">My story</p>
+                    <h2 data-aos="fade-in" data-aos-duration="1000">About me</h2>
+                    <p class="sub-heading dash dark" data-aos="fade-right" data-aos-delay="250" data-aos-duration="750">My story</p>
                     <p class="about-me-txt"><?php the_field( 'about_me_description' )?></p>
                 </div>
                 <img src="<?php echo get_field( 'about_me_image' )[ 'url' ];?>">
@@ -54,7 +62,7 @@
         url(<?php echo get_template_directory_uri(); ?>/assets/images/blurry-white.svg);"
         id="tools" class="tools dark">
         <div class="tools__heading">
-            <h2>My toolbox</h2>
+            <h2 data-aos="fade-in" data-aos-duration="1000">My toolbox</h2>
             <p class="sub-heading">Here is what I have learned since becoming a web developer</p>
         </div>
 
@@ -64,48 +72,51 @@
             ?>
         </div>
     </section>
+
+    <!-- SERVICES -->
     <section style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/noise.png), 
         url(<?php echo get_template_directory_uri(); ?>/assets/images/blurry-red-black.svg);"
         class="services light">
         <div class="section__container">
             <div class="heading__container">
-                <h2>What I Provide</h2>
-                <p class="sub-heading dash dark">My Services</p>
+                <h2 data-aos="fade-in" data-aos-duration="1000">What I Provide</h2>
+                <p class="sub-heading dash dark" data-aos="fade-right" data-aos-delay="250" data-aos-duration="750">My Services</p>
             </div>
             <div class="services__container">
-                <div class="service__info">
+                <div class="service__info" data-aos="fade-up" data-aos-delay="750" data-aos-duration="500">
                     <h3><span class="double-fs">1.</span><?php echo get_field( 'service_1_title' );?></h3>
                     <p><?php echo get_field( 'service_1_description' );?></p>
                 </div>
-                <div class="service__info">
+                <div class="service__info" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="500">
                     <h3><span class="double-fs">2.</span><?php echo get_field( 'service_2_title' );?></h3>
                     <p><?php echo get_field( 'service_2_description' );?></p>
                 </div>
-                <div class="service__info">
+                <div class="service__info" data-aos="fade-up" data-aos-delay="1250" data-aos-duration="500">
                     <h3><span class="double-fs">3.</span><?php echo get_field( 'service_3_title' );?></h3>
                     <p><?php echo get_field( 'service_3_description' );?></p>
                 </div>
             </div>
         </div>
     </section>
+    <!-- MAIN PROJECT EXAMPLE 1 -->
     <section style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/noise.png), 
         url(<?php echo get_template_directory_uri(); ?>/assets/images/blurry-white-red.svg);"
         id="projects" class="projects dark">
         <div class="section__container">
             <div class="projects__container">
                 <div class="heading__container grid-item-1">
-                    <h2><?php echo get_field( 'project_type_1_title' );?></h2>
-                    <p class="sub-heading dash light"><?php echo get_field( 'project_type_1_subheading' );?></p>
+                    <h2 data-aos="fade-in" data-aos-duration="1000"><?php echo get_field( 'project_type_1_title' );?></h2>
+                    <p class="sub-heading dash light" data-aos="fade-right" data-aos-delay="250" data-aos-duration="750"><?php echo get_field( 'project_type_1_subheading' );?></p>
                 </div>
                 <div class="grid-item-2">
                     <img src="<?php echo get_field( 'project_example_1_image' )[ 'url' ];?>" alt="">
                 </div>
                 <div class="projects__description dash light grid-item-3">
-                    <div class="project__title">
+                    <div class="project__title" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
                         <h3 class="x-large">1.</h3>
                         <h3><?php echo get_field( 'project_example_1_title' );?></h3>
                     </div>
-                    <p><?php echo get_field( 'project_example_1_description' );?></p>
+                    <p data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000"><?php echo get_field( 'project_example_1_description' );?></p>
                     <a href="<?php echo get_field( 'project_example_1_link' );?>">
                     <button class="project__button">
                         <span>More Details</span>
@@ -121,24 +132,25 @@
             </div>
         </div>
     </section>
+        <!-- MAIN PROJECT EXAMPLE 2 -->
     <section style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/noise.png), 
         url(<?php echo get_template_directory_uri(); ?>/assets/images/blurry-red-black.svg);"
         class="projects light">
         <div class="section__container">
             <div class="projects__container">
                 <div class="heading__container grid-item-1">
-                    <h2><?php echo get_field( 'project_type_2_title' );?></h2>
-                    <p class="sub-heading dash dark"><?php echo get_field( 'project_type_2_subheading' );?></p>
+                    <h2 data-aos="fade-in" data-aos-duration="1000"><?php echo get_field( 'project_type_2_title' );?></h2>
+                    <p class="sub-heading dash dark" data-aos="fade-right" data-aos-delay="250" data-aos-duration="750"><?php echo get_field( 'project_type_2_subheading' );?></p>
                 </div>
                 <div class="grid-item-2">
                     <img src="<?php echo get_field( 'project_example_2_image' )[ 'url' ];?>" alt="">
                 </div>
                 <div class="projects__description dash dark grid-item-3">
-                    <div class="project__title">
+                    <div class="project__title" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
                         <h3 class="x-large">2.</h3>
                         <h3><?php echo get_field( 'project_example_2_title' );?></h3>
                     </div>
-                    <p><?php echo get_field( 'project_example_2_description' );?></p>
+                    <p data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000"><?php echo get_field( 'project_example_2_description' );?></p>
                     <a href="<?php echo get_field( 'project_example_2_link' );?>">
                         <button class="project__button">
                             <span>More Details</span>
