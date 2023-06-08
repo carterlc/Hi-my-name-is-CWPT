@@ -7,7 +7,7 @@ $email="carterlc@live.ca";
         <div class="section__container">
             <div class="contact__container">
                 <h2 data-aos="fade-in" data-aos-duration="1000">Get in touch</h2>
-                <p>Thanks for visiting, for general inquiries please email me at carterlc@live.ca!</p>
+                <p data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000">Thanks for visiting, for general inquiries please email me at carterlc@live.ca!</p>
                 <button class="contact_btn" role="button">
                     <a href="<?php echo esc_url( 'mailto:' . antispambot( $email ) ); ?>">
                         <span class="text">Shoot me an email!</span>

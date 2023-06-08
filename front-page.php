@@ -44,6 +44,7 @@
             </div>
         </div>
     </section>
+    <!-- ABOUT ME -->
     <section style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/noise.png), 
         url(<?php echo get_template_directory_uri(); ?>/assets/images/blurry-red-black.svg);"
         id="about" class="about light">
@@ -52,18 +53,20 @@
                 <div class="heading__container">
                     <h2 data-aos="fade-in" data-aos-duration="1000">About me</h2>
                     <p class="sub-heading dash dark" data-aos="fade-right" data-aos-delay="250" data-aos-duration="750">My story</p>
-                    <p class="about-me-txt"><?php the_field( 'about_me_description' )?></p>
+                    <p data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000" class="about-me-txt"><?php the_field( 'about_me_description' )?></p>
                 </div>
                 <img src="<?php echo get_field( 'about_me_image' )[ 'url' ];?>">
             </div>
         </div>
     </section>
+
+    <!-- TOOLBOX -->
     <section style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/noise.png), 
         url(<?php echo get_template_directory_uri(); ?>/assets/images/blurry-white.svg);"
         id="tools" class="tools dark">
         <div class="tools__heading">
             <h2 data-aos="fade-in" data-aos-duration="1000">My toolbox</h2>
-            <p class="sub-heading">Here is what I have learned since becoming a web developer</p>
+            <p data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000" class="sub-heading">Here is what I have learned since becoming a web developer</p>
         </div>
 
         <div class="slider">
