@@ -8,13 +8,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php wp_head();?>
 </head>
-
-<?php
-    wp_head();
-?>
 <body>
-
     <header>
         <div class="logo">
             <?php
@@ -32,6 +28,9 @@
                 <path class="svg__path" d="M589.9,536.1c-13.2,23.6-38.4,39.6-67.4,39.6c-42.6,0-77.1-34.5-77.1-77.1l0-190.7c-75.4,30.5-128.6,104.4-128.6,190.7c0,113.6,92.1,205.7,205.7,205.7c77,0,144.2-42.3,179.4-105L589.9,536.1z"/>
             </svg> -->
         </div>
+        <?php
+if (!is_single()) :
+    ?>
         <button class="hamburger-nav" aria-label="toggle navigation">
             <svg class="hamburger" viewbox="0 0 100 100" width="50">
                 <rect class="line top" width="60" height="8" x="10" y="20"></rect>
@@ -39,6 +38,7 @@
                 <rect class="line bottom" width="60" height="8" x="10" y="80"></rect>
             </svg>
         </button>
+
         <nav class="nav">
                         <?php
                             wp_nav_menu(
@@ -51,4 +51,7 @@
                             );
                         ?>
         </nav>
+        <?php
+endif;
+?>
     </header>

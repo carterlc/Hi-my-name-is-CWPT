@@ -199,13 +199,5 @@
                             </a>
                     <?php } ?>
                 </div>
-                <!-- <div class="project__item">
-                <a href="">
-                        <img src="assets/images/P2INNACLE_LOGO-50.jpg" alt="ProjectImage">
-                        <div class="project__item-overlay">
-                            <div class="overlay-text">Hover me!</div>
-                        </div>
-                    </a>
-                </div> -->
         </div>
     </section>

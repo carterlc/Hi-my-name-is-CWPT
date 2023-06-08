@@ -1,30 +1,41 @@
-//Add .dash to the menu toggle because wordpress wont let me use my classes for <a> tags
 window.addEventListener('load', function() {
-    var navItems = document.querySelectorAll('.nav__item');
-  
-    navItems.forEach(function(item) {
-      var children = item.children;
-      for (var i = 0; i < children.length; i++) {
-        children[i].classList.add('dash', 'accent');
-      }
-    });
-  });
+  var navItems = document.querySelectorAll('.nav__item');
 
-// Toggle the fullscreen nav open/close
-const navToggle = document.querySelector('.hamburger-nav');
-const navItems = document.querySelectorAll('.nav__item');
+  if (navItems) {
+      navItems.forEach(function(item) {
+          var children = item.children;
+          for (var i = 0; i < children.length; i++) {
+              children[i].classList.add('dash', 'accent');
+          }
+      });
+  }
 
-navToggle.addEventListener('click', () => {
-  document.body.classList.toggle('nav-open');
-  console.log('hello');
-});
+  // Declaration of navToggle variable
+  var navToggle = document.querySelector('.hamburger-nav');
+  var navItems = document.querySelectorAll('.nav__item');
 
-navItems.forEach(item => {
-  const navLink = item.querySelector('a');
-  
-  navLink.addEventListener('click', () => {
-    document.body.classList.remove('nav-open');
-  });
+  if (navToggle) {
+      // Event listener for navToggle
+      navToggle.addEventListener('click', () => {
+          document.body.classList.toggle('nav-open');
+          console.log('hello');
+      });
+  }
+
+  if (navItems) {
+      navItems.forEach(item => {
+          var navLink = item.querySelector('a');
+
+          if (navLink) {
+              // Event listener for navLink
+              navLink.addEventListener('click', () => {
+                  document.body.classList.remove('nav-open');
+              });
+          }
+      });
+  }
+
+  // Rest of your JavaScript code...
 });
 
 // Back to the top button
@@ -76,10 +87,6 @@ document.addEventListener('mouseout', function(event) {
 window.addEventListener('mousemove', updateCursorPosition);
 document.addEventListener('mouseover', toggleCursorSize);
 document.addEventListener('mouseout', toggleCursorSize);
-
-// Slider function
-const sliderCopy = document.querySelector(".slider__container").cloneNode(true);
-document.querySelector(".slider").appendChild(sliderCopy);
 
 
 
