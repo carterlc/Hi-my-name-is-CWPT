@@ -66,7 +66,7 @@
         id="tools" class="tools dark">
         <div class="tools__heading">
             <h2 data-aos="fade-in" data-aos-duration="1000">My toolbox</h2>
-            <p data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000" class="sub-heading">Here is what I have learned since becoming a web developer</p>
+            <p data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000" class="sub-heading">Here is what I have learned since becoming a web enthusiast</p>
         </div>
 
         <div class="slider">

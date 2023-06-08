@@ -62,11 +62,6 @@ a {
     --squishy-padding-lrg: clamp(1em, 7vw, 8em);
 }
 
-:focus {
-    outline: 2px solid var(--clr-accent);
-    outline-offset: 2px;
-}
-
 /* Typography */
 
 h1 {
@@ -723,42 +718,6 @@ section div.section__container div.post__container img{
     color: var(--clr-light);
     background-color: var(--clr-accent);
    }
-
-   /* .project__button {
-    cursor: pointer;
-    font-weight: 700;
-    font-family: Helvetica, "sans-serif";
-    transition: all .2s;
-    padding: 10px 20px;
-    background: transparent;
-    border: 1px solid transparent;
-    display: flex;
-    align-items: center;
-    font-size: 15px;
-    color: var(--clr-accent);
-}
-
-.project__button:hover {
-    background: var(--clr-accent);
-    color: var(--clr-light);
-}
-
-.project__button>svg path {
-    width: 34px;
-    margin-left: 10px;
-    transition: transform .3s ease-in-out;
-    fill: var(--clr-accent);
-}
-
-.project__button:hover svg path {
-    transform: translateX(5px);
-    fill: var(--clr-light);
-
-}
-
-.project__button:active {
-    transform: scale(0.95);
-} */
 
 /* Media Queries */
 

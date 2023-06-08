@@ -39,7 +39,7 @@ if (!is_single()) :
             </svg>
         </button>
 
-        <nav class="nav">
+        <nav class="nav" id="mainNav">
                         <?php
                             wp_nav_menu(
                                 array(

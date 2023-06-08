@@ -88,6 +88,35 @@ window.addEventListener('mousemove', updateCursorPosition);
 document.addEventListener('mouseover', toggleCursorSize);
 document.addEventListener('mouseout', toggleCursorSize);
 
+const otherProjects = document.getElementById('other');
+const rects = document.querySelectorAll('.hamburger rect');
+const fullScreenNav = document.getElementById('mainNav');
+
+
+contactSection.addEventListener('mouseenter', function() {
+  rects.forEach(rect => {
+    rect.style.fill = 'white';
+  });
+});
+
+otherProjects.addEventListener('mouseenter', function() {
+  rects.forEach(rect => {
+    rect.style.fill = 'var(--clr-accent)';
+  });
+});
+
+fullScreenNav.addEventListener('mouseover', function() {
+  rects.forEach(rect => {
+    rect.style.fill = 'var(--clr-accent)';
+  });
+});
+
+
+// contactSection.addEventListener('mouseleave', function() {
+//   rects.forEach(rect => {
+//     rect.style.fill = '';
+//   });
+// });
 
 
 
