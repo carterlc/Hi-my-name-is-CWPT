@@ -22,7 +22,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: var(--ff-secondary);
+    font-family: var(--ff-primary);
     cursor: none;
 }
 
@@ -41,15 +41,8 @@ a {
     --clr-accent2: #c4e201;
     --noise-intensity: 200px;
 
-    /* --ff-primary: Helvetica, sans-serif; */
-    /* --ff-secondary: Helvetica, sans-serif; */
-    --ff-secondary: 'Poppins', sans-serif;
-    /* --ff-secondary: 'Montserrat', sans-serif; */
-    /* --ff-secondary: 'Lato', sans-serif; */
+    --ff-primary: 'Poppins','Helvetica', sans-serif;
 
-    /* font-family: 'Lato', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Poppins', sans-serif; */
 
 
     --fs-h1: clamp(1em, 8vw, 8em);
