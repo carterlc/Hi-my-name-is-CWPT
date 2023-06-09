@@ -1,3 +1,10 @@
+<?php 
+/*
+ * Template Name: Project Grid
+ * 
+ */
+?>
+
 <section style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/noise.png), 
         url(<?php echo get_template_directory_uri(); ?>/assets/images/blurry-white-red.svg);"
         id="other" class="other dark">

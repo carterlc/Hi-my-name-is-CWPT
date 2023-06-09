@@ -3,7 +3,7 @@
  * Template Name: Project Page
  * Displays each project in greater detail
  */
-;?>
+?>
 This is project page in single.php
 
 <?php get_header();?>
